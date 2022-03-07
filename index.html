@@ -1,0 +1,87 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(255, 248, 238);
+            font-family: "Lato", "sans-serif";
+        }
+        .nameText {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #nameForm {
+            padding: 20px;
+        }
+
+        #nameSubmit, #nameclear {
+            color: white;
+            background-color: #083375;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .clear{
+            color: white;
+            background-color: #083375;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        #nameSubmit:hover {
+            cursor: pointer;
+        }
+        #nameclear:hover {
+            cursor: pointer;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border: 2px solid black;
+            width: 50%;
+
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <head>
+        <title class="alignct">Country finder</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="card">
+            <h2 class="nameText">Find your country by typing name...!!!</h2>
+
+            <form class="nameText" id="nameForm" action="/" method="post">
+                Name:
+                <input 
+                    class="nameText"
+                    id="nameInput"
+                    type="text"
+                    name="zipCode"
+                  
+                /><br />
+                <input
+                    class="nameText"
+                    id="nameSubmit"
+                    type="submit"
+                    value="Submit"
+                />
+                <input
+                    class="nameText"
+                    id="nameclear"
+                    type="reset"
+                    value='Clear'
+                />
+            </form>
+        </div>
+       
+    </body>
+</html>

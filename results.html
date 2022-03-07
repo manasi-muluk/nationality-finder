@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-item: center;
+        }
+        #nameResults {
+            background-color: #83e9c2;
+            font-family: "Lato", sans-serif;
+            font-size: 24px;
+            padding: 30px;
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            margin-top: 10%;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nationality information</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div id="nameResults">
+            <table>
+                <tr>
+                    <th>
+                        <h3>Country id :</h3>
+                    </th>
+                    <th>
+                        <h3>{{ country_id }}</h3>
+                    </th>
+                </tr>
+                
+                <tr>
+                    <th>
+                        <h3>Probability:</h3>
+                    </th>
+                    <th>
+                        <h3>{{ probability }}</h3>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
